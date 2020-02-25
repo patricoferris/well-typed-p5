@@ -18,7 +18,6 @@ let draw_shape = (shape) =>
 
 /***** P5 Setting up and Draw Loop ******/
 let red = (255, 0, 0);
-let points = random_points (600, 10);
 
 /* Create the canvas and set drawing colour to red */
 let setup = () => {
@@ -33,6 +32,8 @@ let rec random_points = (max, n) => {
   | n => [(Random.int(max), Random.int(max)), ...(random_points(max, n - 1))];
   }
 }
+
+let points = random_points (600, 10);
 
 /* Iterate over a list of pairs and apply the function f*/
 let rec iter_pair = (f, lst) => {

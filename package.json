@@ -5,11 +5,13 @@
     "build": "bsb -make-world",
     "parcel": "parcel build src/index.html --public-url ./ --no-minify",
     "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world && rm -r ./dist",
-    "pages": "rsync -r public/ pages",
+    "clean": "bsb -clean-world",
+    "parcel-clean": "rm -r ./dist",
+    "pages": "rsync -r public/ pages"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "Reason"
   ],
   "author": "",
   "license": "MIT",

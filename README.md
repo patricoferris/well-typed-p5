@@ -19,4 +19,4 @@ npm run parcel
 
 You can then open `./dist/index.html`. This requires internet access to get the P5 library from the CDN (you could replace this with a local copy for offline fun).
 
-You can run `npm run clean` to tidy everything again afterwards. 
+You can run `npm run parcel-clean && npm run clean` to tidy everything again afterwards. 
