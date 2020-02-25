@@ -1,0 +1,23 @@
+{
+  "name": "well-typed-p5",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "parcel": "parcel build src/index.html --public-url ./ --no-minify",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world && rm -r ./dist",
+    "pages": "rsync -r public/ pages",
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^7.1.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "p5": "^0.10.2"
+  }
+}
